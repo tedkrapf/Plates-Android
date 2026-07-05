@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF5F5F5"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TRIP NAME *"
+            android:textSize="12sp"
+            android:textColor="#FF757575"
+            android:letterSpacing="0.08" />
+
+        <EditText
+            android:id="@+id/etTripName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="e.g. Summer Cross-Country"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DESCRIPTION (OPTIONAL)"
+            android:textSize="12sp"
+            android:textColor="#FF757575"
+            android:letterSpacing="0.08" />
+
+        <EditText
+            android:id="@+id/etDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="What&#39;s this trip about?"
+            android:inputType="textMultiLine"
+            android:minLines="2"
+            android:maxLines="4"
+            android:gravity="top"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="START LOCATION (OPTIONAL)"
+            android:textSize="12sp"
+            android:textColor="#FF757575"
+            android:letterSpacing="0.08" />
+
+        <EditText
+            android:id="@+id/etStartLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="e.g. New York, NY"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="END LOCATION (OPTIONAL)"
+            android:textSize="12sp"
+            android:textColor="#FF757575"
+            android:letterSpacing="0.08" />
+
+        <EditText
+            android:id="@+id/etEndLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:hint="e.g. Los Angeles, CA"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnCreateTrip"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="START ROAD TRIP"
+            android:textSize="16sp"
+            android:textColor="#FFFFFFFF"
+            android:background="@drawable/btn_primary_bg"
+            android:stateListAnimator="@null" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,24 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.plates.app"
+    android:versionCode="1"
+    android:versionName="1.0">
 
     <application
-        android:name=".PlatesApplication"
-        android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher"
         android:roundIcon="@mipmap/ic_launcher_round"
+        android:allowBackup="true"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Plates">
+        android:theme="@style/AppTheme">
+
         <activity
-            android:name=".MainActivity"
+            android:name=".HomeActivity"
             android:exported="true"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.Plates">
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-    </application>
 
+        <activity android:name=".CreateTripActivity"
+            android:label="New Road Trip"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity android:name=".GameActivity"
+            android:label="Plates" />
+
+        <activity android:name=".TripDetailsActivity"
+            android:label="Trip Details" />
+
+    </application>
 </manifest>

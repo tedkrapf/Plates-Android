@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF5F5F5">
+
+    <ListView
+        android:id="@+id/listTrips"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#FFBDBDBD"
+        android:dividerHeight="1dp" />
+
+    <TextView
+        android:id="@+id/tvEmpty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="No trips yet.\nTap + to start a new road trip!"
+        android:textSize="18sp"
+        android:textColor="#FF757575"
+        android:padding="32dp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/fab"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:text="+"
+        android:textSize="28sp"
+        android:textColor="#FFFFFFFF"
+        android:background="@drawable/fab_bg"
+        android:elevation="6dp"
+        android:stateListAnimator="@null" />
+
+</FrameLayout>

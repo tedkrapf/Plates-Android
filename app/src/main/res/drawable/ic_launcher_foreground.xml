@@ -4,24 +4,37 @@
     android:height="108dp"
     android:viewportWidth="108"
     android:viewportHeight="108">
-    <!-- License plate shape -->
+    <!-- Plate fill -->
     <path
         android:fillColor="#FFFFFF"
-        android:pathData="M20,38 Q20,32 26,32 L82,32 Q88,32 88,38 L88,70 Q88,76 82,76 L26,76 Q20,76 20,70 Z"/>
+        android:pathData="M16,36 C16,30 21,26 27,26 L81,26 C87,26 92,30 92,36 L92,72 C92,78 87,82 81,82 L27,82 C21,82 16,78 16,72 Z"/>
     <!-- Plate border -->
     <path
+        android:fillColor="#00000000"
         android:strokeColor="#FFD700"
-        android:strokeWidth="2"
-        android:fillColor="@android:color/transparent"
-        android:pathData="M22,40 Q22,34 28,34 L80,34 Q86,34 86,40 L86,68 Q86,74 80,74 L28,74 Q22,74 22,68 Z"/>
-    <!-- Text "US" stylized -->
-    <text
-        android:fontFamily="sans-serif-black"
-        android:textSize="18sp"
-        android:fillColor="#1B3A7A"/>
-    <!-- Car silhouette wheels -->
-    <circle android:fillColor="#1B3A7A" android:cx="34" android:cy="54" android:r="8"/>
-    <circle android:fillColor="#FFFFFF" android:cx="34" android:cy="54" android:r="4"/>
-    <circle android:fillColor="#1B3A7A" android:cx="74" android:cy="54" android:r="8"/>
-    <circle android:fillColor="#FFFFFF" android:cx="74" android:cy="54" android:r="4"/>
+        android:strokeWidth="3"
+        android:pathData="M20,38 C20,33 24,29 29,29 L79,29 C84,29 88,33 88,38 L88,70 C88,75 84,79 79,79 L29,79 C24,79 20,75 20,70 Z"/>
+    <!-- Bolt hole TL -->
+    <path
+        android:fillColor="#1B3A7A"
+        android:pathData="M26,34 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0"/>
+    <!-- Bolt hole TR -->
+    <path
+        android:fillColor="#1B3A7A"
+        android:pathData="M82,34 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0"/>
+    <!-- Bolt hole BL -->
+    <path
+        android:fillColor="#1B3A7A"
+        android:pathData="M26,74 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0"/>
+    <!-- Bolt hole BR -->
+    <path
+        android:fillColor="#1B3A7A"
+        android:pathData="M82,74 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0"/>
+    <!-- Number bars (decorative) -->
+    <path
+        android:fillColor="#1B3A7A"
+        android:pathData="M32,46 L76,46 L76,50 L32,50 Z"/>
+    <path
+        android:fillColor="#1B3A7A"
+        android:pathData="M38,56 L70,56 L70,60 L38,60 Z"/>
 </vector>

@@ -1,4 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Theme.Plates" parent="android:Theme.Material.Light.NoActionBar" />
+    <style name="AppTheme" parent="android:Theme.Material.Light.DarkActionBar">
+        <item name="android:colorPrimary">#FF1B3A7A</item>
+        <item name="android:colorPrimaryDark">#FF102855</item>
+        <item name="android:colorAccent">#FF00DD55</item>
+        <item name="android:actionBarStyle">@style/AppActionBar</item>
+    </style>
+
+    <style name="AppActionBar" parent="android:Widget.Material.ActionBar.Solid">
+        <item name="android:background">#FF1B3A7A</item>
+        <item name="android:titleTextStyle">@style/AppActionBarTitle</item>
+    </style>
+
+    <style name="AppActionBarTitle" parent="android:TextAppearance.Material.Widget.ActionBar.Title">
+        <item name="android:textColor">#FFFFFFFF</item>
+    </style>
 </resources>
