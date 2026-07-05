@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- License plate shape -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M20,38 Q20,32 26,32 L82,32 Q88,32 88,38 L88,70 Q88,76 82,76 L26,76 Q20,76 20,70 Z"/>
+    <!-- Plate border -->
+    <path
+        android:strokeColor="#FFD700"
+        android:strokeWidth="2"
+        android:fillColor="@android:color/transparent"
+        android:pathData="M22,40 Q22,34 28,34 L80,34 Q86,34 86,40 L86,68 Q86,74 80,74 L28,74 Q22,74 22,68 Z"/>
+    <!-- Text "US" stylized -->
+    <text
+        android:fontFamily="sans-serif-black"
+        android:textSize="18sp"
+        android:fillColor="#1B3A7A"/>
+    <!-- Car silhouette wheels -->
+    <circle android:fillColor="#1B3A7A" android:cx="34" android:cy="54" android:r="8"/>
+    <circle android:fillColor="#FFFFFF" android:cx="34" android:cy="54" android:r="4"/>
+    <circle android:fillColor="#1B3A7A" android:cx="74" android:cy="54" android:r="8"/>
+    <circle android:fillColor="#FFFFFF" android:cx="74" android:cy="54" android:r="4"/>
+</vector>
